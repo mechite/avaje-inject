@@ -8,8 +8,10 @@ import org.jspecify.annotations.NullMarked;
  * Plugin interface which contains the application properties used for wiring. Used with
  * {@link io.avaje.inject.RequiresProperty} and {@link io.avaje.inject.Profile}.
  *
- * <p>The plugin is loaded via ServiceLoader and defaults to an implementation that uses
- * {@link System#getProperty(String)} and {@link System#getenv(String)}.
+ * <p>The default implementation uses {@link System#getProperty(String)} and
+ * {@link System#getenv(String)} to provide configuration.
+ * 
+ * @see io.avaje.inject.spi.InjectExtension
  */
 @NullMarked
 public interface ConfigPropertyPlugin extends InjectExtension {
