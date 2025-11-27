@@ -1,6 +1,9 @@
 package io.avaje.inject.spi;
 
-/** A Module containing dependencies that will be included in BeanScope. */
+/**
+ * A Module containing dependencies that will be included in BeanScope.
+ * @see io.avaje.inject.spi.InjectExtension
+ */
 public interface AvajeModule extends InjectExtension {
 
   /** Empty array of strings. */
